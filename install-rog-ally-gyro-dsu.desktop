@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=Install ROG Ally Gyro DSU
+Exec=bash -c 'curl -sL https://raw.githubusercontent.com/enzomarin/rog-ally-gyro-dsu/main/scripts/install.sh | bash'
+Icon=input-gaming
+Terminal=true
+Categories=Utility;

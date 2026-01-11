@@ -1,0 +1,12 @@
+[Unit]
+Description=ROG Ally Gyro DSU Server
+After=network.target
+
+[Service]
+Type=simple
+ExecStart=%h/.local/bin/rog-ally-gyro-dsu
+Restart=on-failure
+RestartSec=5
+
+[Install]
+WantedBy=default.target
