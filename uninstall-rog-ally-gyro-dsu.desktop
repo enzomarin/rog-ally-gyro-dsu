@@ -1,7 +1,7 @@
 [Desktop Entry]
 Type=Application
 Name=Uninstall ROG Ally Gyro DSU
-Exec=bash -c 'curl -sL https://raw.githubusercontent.com/enzomarin/rog-ally-gyro-dsu/main/scripts/uninstall.sh | bash'
+Exec=bash -c 'TMPFILE=$(mktemp) && curl -sL https://raw.githubusercontent.com/enzomarin/rog-ally-gyro-dsu/main/scripts/uninstall.sh -o $TMPFILE && chmod +x $TMPFILE && $TMPFILE && rm $TMPFILE'
 Icon=input-gaming
 Terminal=true
 Categories=Utility;

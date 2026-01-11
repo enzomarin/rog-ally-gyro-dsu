@@ -34,4 +34,5 @@ echo "📊 Check status: systemctl --user status rog-ally-gyro-dsu"
 echo "📝 View logs: journalctl --user -u rog-ally-gyro-dsu -f"
 echo ""
 
-read -p "Press any key to continue..."
+echo "Press Enter key to close this window..."
+read -n 1 -s -r

@@ -1,7 +1,8 @@
+#!/usr/bin/env xdg-open
 [Desktop Entry]
 Type=Application
 Name=Install ROG Ally Gyro DSU
-Exec=bash -c 'curl -sL https://raw.githubusercontent.com/enzomarin/rog-ally-gyro-dsu/main/scripts/install.sh | bash'
+Exec=bash -c 'TMPFILE=$(mktemp) && curl -sL https://raw.githubusercontent.com/enzomarin/rog-ally-gyro-dsu/main/scripts/install.sh -o $TMPFILE && chmod +x $TMPFILE && $TMPFILE && rm $TMPFILE'
 Icon=input-gaming
 Terminal=true
 Categories=Utility;

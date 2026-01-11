@@ -1,6 +1,7 @@
 #!/bin/bash
 
 echo "🗑️  Uninstalling ROG Ally Gyro DSU Server..."
+echo ""
 
 # Stop and disable service
 systemctl --user stop rog-ally-gyro-dsu.service 2>/dev/null || true
@@ -16,5 +17,5 @@ systemctl --user daemon-reload
 echo ""
 echo "✅ Uninstallation complete!"
 echo ""
-
-read -p "Press any key to continue..."
+echo "Press Enter key to close this window..."
+read -n 1 -s -r
